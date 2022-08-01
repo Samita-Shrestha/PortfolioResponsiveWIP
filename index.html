@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/82159c7a27.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!----Hero section-->
+    <section id="main" class="hero">
+        <nav>
+            <a href="index.html"><img src="images/logo2.webp" class="rotate"></a>
+
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#main">About</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <li><a href="#feedback-section">Feedback</a></li>
+
+                </ul>
+
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <div class="typed-out">Samita Shrestha</div>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Nemo corporis ratione similique! 
+                Laborum illo dignissimos ea dolores et officia neque totam pariatur rerum recusandae, 
+                odit inventore est consectetur ratione quibusdam. </p>
+            <a href="" class="hero-btn"> RESUME</a>
+        </div>
+    </section>
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <section id="work">
+        <div class="work-heading">
+            <span>explore</span>
+            <h3>Some of My Works</h3>
+        </div>
+        <div class="work-container">
+            <!-- Work-box-1------>
+            <div class="work-box">
+                <a href='https://www.apple.com/app-store/' target="_blank"><img src="images/ecommerce.png"></a>
+            </div>
+            <!--work-box-2-------->
+            <div class="work-box">
+                <!--bg-img------------->
+                <a href='http://127.0.0.1:5500/Project1/index.html' target="_blank"><img src="images/calculator.jpg"></a>
+            </div>
+            <!--work-box-3-------->
+            <div class="work-box">
+                <!--bg-img------------->
+                <a href='http://127.0.0.1:5500/Project2/index.html' target="_blank"><img src="images/puzzle.jpg"></a>
+            </div>
+            <!--Label for works  -->
+            <label for="work" class="lbl">
+                <h4>Snake game</h4>
+            </label>
+            <label for="work" class="lbl">
+                <h4> Simple Calculator</h4>
+            </label>
+            <label for="work" class="lbl">
+                <h4> 3x3 Puzzle</h4>
+            </label>
+        </div>
+    </section>
+
+    <!-------------------Service------------------>
+    <section id="service" class="service">
+
+        <div class="work-heading">
+            <span>SKILLS</span>
+            <h3>Some of My Skills</h3>
+        </div>
+        <div class="service-box-container">
+            <!-- service-1 -->
+            <div class="service-box">
+                <img src="images/data.jpg" />
+                <h4>App Development</h4>
+                <hr><br>
+                <p> ---------WIP------ </p>
+            </div>
+            <!-- service-2 -->
+            <div class="service-box">
+                <img src="images/webpage.jpg" /><br>
+                <h4>Webpage Development</h4>
+                <hr><br>
+                <p>-----WIP----- </p>
+            </div>
+            <!-- service-3 -->
+            <div class="service-box">
+                <img src="images/app.jpg" />
+                <h4>Game Development</h4>
+                <hr><br>
+                <p> -------WIP-------- </p>
+            </div>
+            <!-- service-4 -->
+            <div class="service-box">
+                <img src="images/freelance.jpg" />
+                <h4>Freelance Coding</h4>
+                <hr><br>
+                <p>-------WIP-----------</p>
+            </div>
+        </div>
+    </section>
+    <!---------------------End of Service----------------->
+
+
+
+    <!-------------------End of Contact me---------->
+
+    <section id="contact-section">
+        <div class="contactsection">
+            <h3>Contact me</h3>
+            <div class="contact-box-container">
+                <!-- service-1 -->
+                <div class="contact-box">
+                    <a href='https://www.apple.com/app-store/' target="_blank"> <img src="images/fb.png" alt="" width="50px"
+                            height="50px"></a>
+
+                </div>
+                <!-- service-2 -->
+                <div class="contact-box">
+                    <a href="mailto:samitashrestha1994@gmail.com" class="contactinfo"> <img src="images/gmail.png" alt=""
+                            width="50px" height="50px"></a>
+
+                </div>
+                <!-- service-3 -->
+                <div class="contact-box">
+                    <a href="https://www.linkedin.com/" class="contactinfo"> <img
+                            src="images/linkedin.png" alt="" width="50px" height="50px"></a>
+
+                </div>
+
+            </div>
+    </section>
+    <section id="feedback-section">
+        <div class="feedback-container">
+            <div class="form-wrapper">
+                <h1> Any Question?</h1>
+                <p>Please leave your feedback here </p>
+                <form action="https://formsubmit.co/122c12ae4b69cd6cb13a5814bdb71bda" method="POST">
+                    <div class="formgroup">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstName" id="firstname">
+                    </div>
+                    <div class="formgroup">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="lastName" id="lastname">
+                    </div>
+                    <div class="formgroup">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="@email.com">
+                    </div>
+                    <div class="formgroup">
+                        <label for="message">Leave your Feedback</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!------------------End of Signup---------------->
+
+    <!-----------------Footer------------------------>
+    <footer>
+        <p> &copy Copyright 2022 - Samita Shrestha</p>
+    </footer>
+  
+
+
+    }
+</script>
+</body>
+
+</html>
